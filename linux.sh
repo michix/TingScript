@@ -80,7 +80,7 @@ getInfo() {
   # shellcheck disable=SC2001
   s="$(echo "$1" | sed 's/^0*//')"
   echo "short: $s"
-  wget $DOWNLOAD_PREFIX_GET_DESCRIPTION_ID/"$s"/$DOWNLOAD_AREA_EN/$DOWNLOAD_POSTFIX -O "$2"/"$1""$3"
+  wget $DOWNLOAD_PREFIX_GET_DESCRIPTION_ID/"$s"/$DOWNLOAD_AREA_EN_TYPE/$DOWNLOAD_POSTFIX -O "$2"/"$1""$3"
 }
 
 getFiles() {
