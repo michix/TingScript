@@ -1,8 +1,8 @@
 #!/bin/bash
 
 DOWNLOAD_PREFIX="http://13.80.138.170/book-files"
-DOWNLOAD_PREFIX_GET_ID="$DOWNLOAD_PREFIX/get/id/"
-DOWNLOAD_PREFIX_GET_DESCRIPTION_ID="$DOWNLOAD_PREFIX/get-description/id/"
+DOWNLOAD_PREFIX_GET_ID="$DOWNLOAD_PREFIX/get/id"
+DOWNLOAD_PREFIX_GET_DESCRIPTION_ID="$DOWNLOAD_PREFIX/get-description/id"
 DOWNLOAD_AREA_EN_TYPE="area/en/type"
 DOWNLOAD_POSTFIX="sn/5497559973888/"
 
@@ -70,7 +70,7 @@ checkFiles() {
     echo "Kein Scriptfile notwendig"
   else
     echo "Downloade Scriptfile $1$scrEnd"
-    wget "$DOWNLOAD_PREFIX_GET_ID/$s/$DOWNLOAD_AREA_EN_TYPE/script/$DOWNLOAD_POSTFIX" -O "$2/$1$oufEnd"
+    wget "$DOWNLOAD_PREFIX_GET_ID/$s/$DOWNLOAD_AREA_EN_TYPE/script/$DOWNLOAD_POSTFIX" -O "$2/$1$scrEnd"
   fi
 
   echo ""
